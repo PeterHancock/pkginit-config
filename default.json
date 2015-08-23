@@ -1,0 +1,17 @@
+{
+  "name": basename.replace(/^node-/, ''),
+  "description": prompt(),
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Peter Hancock <peter.hancock@gmail.com> (https://peterhancock.github.io)",
+  "repository": {
+      "url": "git://github.com/PeterHancock/" + basename + ".git"
+  },
+  "main": prompt('entry point', 'index.js'),
+  "scripts": {
+    "test": "tape test/**.*.js"
+  },
+  "devDependencies": {
+    "tape": "~4.2.0"
+  }
+}
