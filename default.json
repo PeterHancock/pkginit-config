@@ -9,7 +9,7 @@
   },
   "main": prompt('entry point', 'index.js'),
   "scripts": {
-    "test": "tape test/**.*.js"
+    "test": "tape test/**/*.js"
   },
   "devDependencies": {
     "tape": "~4.2.0"
