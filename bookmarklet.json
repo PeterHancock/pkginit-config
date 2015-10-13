@@ -1,0 +1,19 @@
+{
+  "name": basename.replace(/^node-/, ''),
+  "description": prompt(),
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Peter Hancock <peter.hancock@gmail.com> (https://peterhancock.github.io)",
+  "repository": {
+      "url": "git://github.com/PeterHancock/" + basename + ".git"
+  },
+  "main": prompt('entry point', 'bookmarklet.js'),
+  "scripts": {
+    "build": "boomlet $npm_package_main $npm_package_name",
+    "test": "tape test/**/*.js"
+  },
+  "devDependencies": {
+    "tape": "~4.2.0",
+    "boomlet": "~1.0.0"
+  }
+}
